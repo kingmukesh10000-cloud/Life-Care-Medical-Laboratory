@@ -232,7 +232,7 @@ const ICON = {
 function boot(){
   let staff = DB.getStaff();
   if(!staff || !staff.length){
-    staff = [{username:'admin', password:'admin123', name:'Lab Administrator', role:'admin'}];
+    staff = [{username:'mukesh', password:'685374', name:'Lab Administrator', role:'admin'}];
     DB.setStaff(staff);
   }
   state.staff = staff;
@@ -479,8 +479,6 @@ function viewLogin(){
         <button type="submit" class="btn btn-primary btn-block">Sign in</button>
       </form>
       <div class="hint">
-        First time here? Sign in with <strong>admin</strong> / <strong>admin123</strong>, then open
-        Staff Management to change the password and add your team.<br><br>
         Records are stored in this browser's local storage, so each device/browser keeps its own
         patient list. This is a working prototype, not a HIPAA-grade system \u2014 for shared,
         multi-device patient data, pair this front end with a proper secured backend.
